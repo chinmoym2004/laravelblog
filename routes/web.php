@@ -11,6 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'BlogController@getIndex');
+Route::get('login', 'BlogController@getLogin');
+Route::post('login', 'BlogController@postLogin');
+
+Route::get('logout', 'BlogController@logout');
+
+Route::get('/post/{slug}', 'BlogController@getPost');
+Route::prefix('admin')->group(function () {
+
+    Route::group(['middleware' => ['admin.auth'],'namespace'=>'Admin'], function () {
+
+    	Route::get('/', 'AdminController@getDashboard');
+    	Route::get('dashboard','AdminController@getDashboard');
+    	Route::resource('post', 'PostController');
+
+    });
 });
