@@ -6,17 +6,16 @@ This is a ready made blog build with laravel just to make your effort easy. You 
 
 If you have no idea about Laravel , I would suggest you to check it [here](http://laravel.com/docs/5.4) . You need your system to be ready as per Laravel system requirement.
 
-### Packages in there. 
+## Built With
 
-This has
 
-* [Laravel](http://laravel.com/docs/5.4)5.4
+* [Laravel](http://laravel.com/docs/5.4) 5.4
 * [Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/) for  blog template.
 * [SB Admin](https://startbootstrap.com/template-overviews/sb-admin/) for the admin panel
 
 ### Pre Requirement
 
-In your system Laravel 5.4 installation should be up and runnign well . Else you'll have to spend time on fixing things rather than this blog.  
+In your system Laravel 5.4 installation should be up and running well . Else you'll have to spend time on fixing things rather than this blog.  
 
 
 ### Installing
@@ -45,7 +44,7 @@ php artisan db:seed
 
 ```
 
-As we have all model under app\Model and the namespace is App\Model for all model . you need to change in auth file . Change in cofig/auth.php
+As we have all model under app\Model and the namespace is App\Model for all model . you need to change in auth file . Change in config/auth.php
 
 ```
 'providers' => [
@@ -91,7 +90,7 @@ http://localhost:8000/login
 
 ```
 
-Admin credenetial 
+Admin credential 
 
 ```
 
@@ -112,7 +111,7 @@ When contributing to this repository, please first discuss the change you wish t
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [<LICENSE class="md"></LICENSE>](LICENSE.md) file for details
 
 
 
